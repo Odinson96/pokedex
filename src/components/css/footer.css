@@ -1,0 +1,19 @@
+.all_footer_container {
+  background-color: black;
+  height: 20vh;
+  color: aliceblue;
+  border-radius: 10px;
+  margin-top: 5vh;
+  -webkit-box-shadow: -3px -10px 5px 0px rgba(210, 210, 210, 0.75);
+  box-shadow: -3px -10px 5px 0px rgba(210, 210, 210, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.poke_logo_footer {
+  margin-left: 2vw;
+}

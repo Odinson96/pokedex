@@ -1,0 +1,167 @@
+.all_poke_container {
+  border: 2px black dotted;
+  width: 50vw;
+  height: 20vh;
+  border-radius: 5%;
+  background-color: azure;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 1px 2px 7px black;
+  box-shadow: 1px 1px 2px 7px black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.all_poke_container:hover {
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
+.poke_avatar {
+  width: 80%;
+}
+
+.water {
+  color: rgb(38, 70, 168);
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.grass {
+  color: rgb(5, 146, 5);
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.fire {
+  color: red;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.bug {
+  color: green;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.ground {
+  color: rgb(79, 69, 13);
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.poison {
+  color: #0bc741;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.electric {
+  color: #9db107;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.normal {
+  color: rgb(146, 139, 130);
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.fairy {
+  color: #760ba1;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.psychic {
+  color: #640d50;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.fighting {
+  color: #0b0660;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.rock {
+  color: rgb(119, 122, 125);
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.ghost {
+  color: #3d4b52;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.ice {
+  color: #046279;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.dragon {
+  color: #6c3980;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.dark {
+  color: #000000;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.steel {
+  color: #676767;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.flying {
+  color: #cfcfcf;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.type_poke_item {
+  font-size: 14px;
+  line-height: 0.3;
+}
+
+.type_poke_item {
+  margin-top: -10vh;
+}
+
+.poke_name {
+  font-size: 22px;
+  background: -webkit-linear-gradient(#2ea54e, #14685e, rgb(76, 18, 145));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.poke_descrip {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr);
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2vh;
+}
+
+.poke_weight {
+  margin-top: 5vh;
+}
+
+@media only screen and (max-width: 580px) {
+  .poke_descrip {
+    font-size: smaller;
+  }
+  .poke_name {
+    font-size: 14px;
+    margin-top: 5vh;
+  }
+  .poke_avatar {
+    width: 90%;
+    margin-top: 1vh;
+  }
+  .poke_weight {
+    margin-top: 4vh;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .type_poke_item {
+    margin-top: -9vh;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .type_poke_item {
+    margin-top: -8vh;
+  }
+}

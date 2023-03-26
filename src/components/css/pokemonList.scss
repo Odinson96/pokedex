@@ -1,0 +1,131 @@
+$border-comics: 2px black dotted;
+$shadow-comics: 3px 2px 3px 5px black;
+
+.pokemons_map_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+  margin-left: 5vw;
+}
+
+.poke_grid_map {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  margin-left: 6vw;
+}
+
+.upper_toolbar_pokelist {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  margin-left: 10vw;
+}
+
+.input_search_pokelist {
+  width: 40vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  padding-left: 1%;
+}
+
+.sort_by_name_btn {
+  background: none;
+  border: $border-comics;
+  box-shadow: $shadow-comics;
+  border-radius: 12px;
+  font-size: large;
+  margin-left: 6vw;
+  color: rgb(0, 0, 0);
+  transition: all 0.5s ease;
+  background-color: antiquewhite;
+}
+
+.input_search_pokelist {
+  border: $border-comics;
+  box-shadow: $shadow-comics;
+  width: 15vw;
+  margin-bottom: 3vh;
+  transition: all 1s ease-in;
+}
+
+.input_search_pokelist:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+
+.sort_by_name_btn:active {
+  box-shadow: 1px 1px 1px 2px black;
+}
+
+.sort_by_name_btn::first-letter {
+  color: rgb(85, 55, 221);
+  font-size: 20px;
+}
+
+.container_not_found_search {
+  margin-left: 20vw;
+  margin-top: 20vh;
+  background-color: rgb(240, 255, 247);
+  box-shadow: $shadow-comics;
+  border: $border-comics;
+  border-radius: 12px;
+  width: 50vw;
+}
+
+.container_set_page {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+}
+
+.button_set_page {
+  margin-left: 1vw;
+  border-radius: 12px;
+  border: 3px solid;
+  box-shadow: 1px 2px 2px 2px black;
+  border-color: rgb(186, 44, 214);
+  transition: all 0.5s;
+}
+
+.button_set_page:active {
+  box-shadow: 0px 1px 1px 1px black;
+}
+
+.button_current_page {
+  margin-left: 1vw;
+  border-radius: 12px;
+  border: 3px solid;
+  box-shadow: 1px 2px 2px 2px black;
+  border-color: rgb(186, 44, 214);
+  transition: all 0.5s;
+  background-color: rgb(152, 185, 6);
+}
+
+@media only screen and (max-width: 768px) {
+  .poke_grid_map {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .poke_grid_map {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+  }
+
+  .input_search_pokelist {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .sort_by_name_btn {
+    font-size: 10px;
+  }
+  .sort_by_name_btn::first-letter {
+    font-size: 10px;
+  }
+}
