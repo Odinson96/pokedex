@@ -6,7 +6,6 @@ export const fetchPersPokemon = createAsyncThunk(
   async (url: string | undefined, thunkAPI) => {
     try {
       const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${url}/`);
-      console.log(res.data);
       return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(
